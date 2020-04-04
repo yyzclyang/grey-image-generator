@@ -22,10 +22,8 @@ input.addEventListener('change', (e) => {
 
       const newImage = new Image();
       newImage.src = greyImageUrl;
+      newImage.style = 'max-height: 50vh; max-width: 50vw;';
       document.getElementById('page').appendChild(newImage);
-      newImage.addEventListener('click', () => {
-        a.click();
-      });
     });
   };
 });
