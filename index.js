@@ -23,6 +23,9 @@ input.addEventListener('change', (e) => {
       const newImage = new Image();
       newImage.src = greyImageUrl;
       document.getElementById('page').appendChild(newImage);
+      newImage.addEventListener('click', () => {
+        a.click();
+      });
     });
   };
 });
